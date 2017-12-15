@@ -5,8 +5,8 @@
 
 3.  Don't expose setter methods
 
-4.  Must always return a new instance of the class when exposing methods which
-    modify the state of the class
+4.  When returning mutable fields from immutable object, should always return
+    a clone instance of them and not the real instance of the field
 
 5.  If the immutable class A holds a instance of mutable class B:
 
