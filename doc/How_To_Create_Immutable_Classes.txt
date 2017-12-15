@@ -1,0 +1,21 @@
+1.  Make class final, so that no other classes can extend it
+
+2.  Make all fields final, so that they’re initialized only once inside the
+    constructor and never modified afterward
+
+3.  Don't expose setter methods
+
+4.  Must always return a new instance of the class when exposing methods which
+    modify the state of the class
+
+5.  If the immutable class A holds a instance of mutable class B:
+
+    - Inside the constructor of class A, make sure to use a clone copy of the
+      passed argument of class B and never set the mutable field of class A to
+      the real instance of class B passed through constructor;
+
+      - This is to prevent the clients who pass the instance object of class B
+        from modifying it afterwards
+
+    - Make sure to always return a clone copy of the field and never return the
+      real object instance
