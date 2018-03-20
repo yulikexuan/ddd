@@ -8,8 +8,16 @@ public interface ISpecification<T> {
 
 	boolean isSatisfiedBy(T t);
 
-	ISpecification<T> and(ISpecification<T> other);
-	ISpecification<T> or(ISpecification<T> other);
-	ISpecification<T> not();
+	default ISpecification<T> and(ISpecification<T> other) {
+		return AndSpecification.create(this, other);
+	}
+
+	default ISpecification<T> or(ISpecification<T> other) {
+		return OrSpecification.create(this, other);
+	}
+
+	default ISpecification<T> not() {
+		return NotSpecification.create(this);
+	}
 
 }///:~
