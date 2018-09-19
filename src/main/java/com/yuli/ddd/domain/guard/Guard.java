@@ -6,6 +6,6 @@ package com.yuli.ddd.domain.guard;
 
 public interface Guard<T> {
 
-	void againstInvalidFor(T t, String message);
+    void againstInvalidFor(T t, String message);
 
 }///:~

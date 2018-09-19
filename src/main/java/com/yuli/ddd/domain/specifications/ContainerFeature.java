@@ -6,6 +6,6 @@ package com.yuli.ddd.domain.specifications;
 
 public enum ContainerFeature {
 
-	ARMORED, VENTILATED, BIOLOGICAL,
+    ARMORED, VENTILATED, BIOLOGICAL,
 
 }///:~

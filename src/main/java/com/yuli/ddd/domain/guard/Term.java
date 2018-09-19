@@ -6,6 +6,6 @@ package com.yuli.ddd.domain.guard;
 
 public enum Term {
 
-	ANNUALLY, MONTHLY, DAILY
+    ANNUALLY, MONTHLY, DAILY
 
 }///:~

@@ -5,6 +5,7 @@ package com.yuli.ddd.domain.supple;
 
 
 public interface IPaint {
-	double getVolume();
-	PigmentColor getColor();
+    double getVolume();
+
+    PigmentColor getColor();
 }///:~
